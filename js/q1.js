@@ -30,13 +30,26 @@ function init(start) {
         if(start != "start") {
             startDraw = false;
 			document.getElementById('btndownload').style.visibility = 'hidden';
+			
         }
 }
 
 function reinit(start){
     //strategy(passDot, start);
     //stopTimer();
-    //resetTimer();
+	if(check_drawing_type == 0 && start_check_1 == true){
+		stopTimer();
+		drawing_1_time = document.getElementById("timer").innerHTML;
+	}
+	else if(check_drawing_type == 1 && start_check_2 == true){
+		stopTimer();
+		drawing_2_time = document.getElementById("timer").innerHTML;
+	}
+	else if(check_drawing_type == 2 && start_check_3 == true){
+		stopTimer();
+		drawing_3_time = document.getElementById("timer").innerHTML;
+	}
+    
     //resetPenlift();
     mouseClick = 0;
     firstDot = {};
@@ -54,6 +67,8 @@ function nextDrawing(canvas) {
 				start_check_1 = false;
 				document.getElementById('btndownload').style.visibility = 'hidden';
 				con = 1;
+				
+				
 			}
 			else if(randIndex == 1){
 				start_check_2 = false;
@@ -64,11 +79,13 @@ function nextDrawing(canvas) {
 				start_check_3 = false;
 				document.getElementById('btndownload').style.visibility = 'hidden';
 				con = 1;
+				
 			}
 			dotArray = allDots[randIndex];
 			level = lvlName[randIndex];
 			document.getElementById("imageid").src = bgImg[randIndex];
 			document.getElementById('fake').style.display = 'block';
+			
 			drawShape(canvas);
 		}
 		else{
@@ -123,6 +140,7 @@ function randomNumber(prev, recursive){
 				for(var i = 0; i < randArr.length; i++){
 					if(rand == randArr[i]){
 						rand = randomNumber(prev, true);
+						
 						break;
 					}
 				}
@@ -289,25 +307,3 @@ function drawLine(ctx,x,y,size) {
 
 
 
-
-/*
-function startTimer() {
-	
-    interval = setInterval(function() {
-        seconds++
-	console.log("second: " + seconds );	
-
-        document.getElementById("timer").innerHTML = seconds + "s ";
-    }, 1);
-}
-
-function stopTimer() {
-	console.log("interval is: " + interval);
-    clearInterval(interval);
-	
-}
-
-function resetTimer() {
-    seconds = 0;
-    document.getElementById("timer").innerHTML = seconds + "s ";
-}*/
