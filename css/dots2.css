@@ -1,0 +1,210 @@
+#mainbg{
+    background: url("mainbg.jpg") no-repeat center center fixed;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -ms-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    background-color: rgb(157, 219, 253);
+}
+
+label{
+    display: inline-block;
+}
+
+body{
+    background-color: rgb(157, 219, 253);
+}
+
+#next, #start1, #stop1{
+    width: 135px;
+    height: 40px;
+}
+
+.img{
+    position: absolute;
+    z-index: 5;
+    width: 700px;
+    height: 600px;
+    margin-left: 380px;
+    margin-top: 50px;
+}
+
+.logo{
+    position: relative;
+    margin-left: 23%;
+    margin-top: 9%;
+}
+.instruct{
+    position: relative;
+    width: 370px;
+    height: 170px;
+    margin-left: 37%;
+    margin-top: 6%;
+}
+.play{
+    position: relative;
+    margin-left: 43%;
+    margin-top: 7%;
+    width: 180px;
+    height: 60px;
+}
+.fullimg{
+    /*position:relation;*/
+    position:fixed;
+    bottom:10vh;
+    left:5vw;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #ea7e5d;
+    border-radius: 4px;
+    z-index: 100;
+}
+
+p.c {
+    /*left: 170px;
+    top: 10px;
+    position: absolute;*/
+    position:fixed;
+    bottom:10vh;
+    right:5vw;
+    height: 100px;
+    border: 4px solid #ea7e5d;
+    font-size: 60px;
+    margin-top:0px;
+    background-color: white;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#0C9;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.bg{
+    position: absolute;
+    z-index: 1;
+    width: 1370px;
+    height: 675px;
+    background-color: #fff;
+}
+
+#container{
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#sketchpadapp, #sketchpadapp0{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#sketchpad, #sketchpad1{
+    border: 2px solid #888;
+    border-radius: 4px;
+    position: relative;
+    z-index: 20;
+}
+
+#clearbutton{
+    font-size: 15px;
+    padding: 10px;
+    -webkit-appearance: none;
+    background: #eee;
+    border: 1px solid #888;
+}
+
+#dataTable {
+    border: 1px solid rgba(255, 153, 19, 0.904);
+    background-color: #EEEEEE;
+    width: 30%;
+    text-align: left;
+    border-collapse: collapse;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: -140px;
+  }
+
+#dataTable tbody td {
+    font-size: 13px;
+  }
+#dataTable tr:nth-child(even) {
+    background: #F5C567;
+  }
+#dataTable th {
+    background: #F5A600;
+    background: -moz-linear-gradient(top, #f7bc40 0%, #f6af19 66%, #F5A600 100%);
+    background: -webkit-linear-gradient(top, #f7bc40 0%, #f6af19 66%, #F5A600 100%);
+    background: linear-gradient(to bottom, #f7bc40 0%, #f6af19 66%, #F5A600 100%);
+    border-bottom: 2px solid #444444;
+  }
+#dataTable th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #F5F5F5;
+  }
+#dataTable th:first-child {
+    border-left: none;
+  }
+  
+  /*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+ 
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    background:#f7f7f7;
+}
+ 
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:#333;
+    transition:all linear 0.15s;
+    /* Type */
+    font-size:1.200em;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+}
+ 
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:#4c4c4c;
+    /* Type */
+    text-decoration:none;
+}
+ 
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+ 
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:15px;
+    display:none;
+}

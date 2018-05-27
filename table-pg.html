@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Welcome To Joins The Dots</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</head>
+<body class="grey lighten-3">
+	<nav class="deep-purple" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="#" class="brand-logo">Welcome To Joins The Dots</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Data</a></li>
+				<li><a href="#">Statistic</a></li>
+			</ul>
+
+			
+		</div>
+	</nav>
+	<div class="container">
+		<div class="section">
+		<div class="card">
+			<div class="card-content">
+				<p>Drawing Information</p>
+			</div>
+			<div class="card-tabs">
+				<ul class="tabs tabs-fixed-width">
+					<li class="tab"><a class="active" href="#test4">Drawing 1</a></li>
+					<li class="tab"><a href="#test5">Drawing 2 </a></li>
+					<li class="tab"><a href="#test6">Drawing 3</a></li>
+				</ul>
+			</div>
+			<div class="card-content grey lighten-4">
+				<div id="test4">
+					<table class="centered" id="table1">
+					
+					</table>
+				</div>
+				<div id="test5">
+					<table class="centered" id="table2">
+						
+					</table>
+				</div>
+				<div id="test6">
+					<table class="centered" id="table3">
+						<!--<tr>
+							<td class="deep-purple" style="width:300px">Sequence</td>
+							<td class="white">Lastname</td> 
+						</tr>
+						<tr>
+							<td class="deep-purple">Sequence (Miss Dots Included)</td>
+							<td class="white">Smith</td> 
+						</tr>
+						<tr>
+							<td class="deep-purple"d>Strategy</td>
+							<td class="white">Jackson</td> 
+						</tr>
+						<tr>
+							<td class="deep-purple"d>Time taken to finish</td>
+							<td class="white">Jackson</td> 
+						</tr>-->
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+		</div>
+		
+		
+		<div class="row ">
+			<div class="col s12 m4">
+				<div class="icon-block">
+					<h2 class="center light-blue-text"><i class="material-icons">filter_1</i></h2>
+					<h5 class="center">No. of penlift on drawing 1</h5>
+
+					<table class="highligh centered white" id="penlift1">
+						<tr class="deep-purple centered">
+							<td>No</td>
+							<td>X</td> 
+							<td>Y</td>
+						</tr>
+						
+
+					</table>
+				</div>
+			</div>
+
+        <div class="col s12 m4">
+				<div class="icon-block">
+					<h2 class="center light-blue-text"><i class="material-icons">filter_2</i></h2>
+					<h5 class="center">No. of penlift on drawing 2</h5>
+
+					<table class="highligh centered white" id="penlift2">
+						<tr class="deep-purple centered">
+							<td>No</td>
+							<td>X</td> 
+							<td>Y</td>
+						</tr>
+						
+					</table>
+				</div>
+		</div>
+
+        <div class="col s12 m4">
+				<div class="icon-block">
+					<h2 class="center light-blue-text"><i class="material-icons">filter_3</i></h2>
+					<h5 class="center">No. of penlift on drawing 3</h5>
+
+					<table class="highligh centered white" id="penlift3">
+						<tr class="deep-purple centered">
+							<td>No</td>
+							<td>X</td> 
+							<td>Y</td>
+						</tr>
+						
+					</table>
+				</div>
+		</div>
+
+		</div>
+    <br><br>
+  
+
+
+  
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l8 s22">
+          <h5 class="white-text">Welcome To Joins The Dots</h5>
+          <p class="grey-text text-lighten-4">Talk about this syatem, the objective and more...</p>
+
+
+        </div>
+        
+        <div class="col l3 s12">
+          <h5 class="white-text">Navigation</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Home</a></li>
+            <li><a class="white-text" href="#!">Data</a></li>
+            <li><a class="white-text" href="#!">Statistic</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="">UTP</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+			
+		seq1 = localStorage.getItem("seq1");
+		seq2 = localStorage.getItem("seq2");
+		seq3 = localStorage.getItem("seq3");
+		
+		param_1 = localStorage.getItem("dot_param_1");
+		param_2 = localStorage.getItem("dot_param_2");
+		param_3 = localStorage.getItem("dot_param_3");
+		
+		a1_time = localStorage.getItem("drawing_1_time");
+		a2_time = localStorage.getItem("drawing_2_time");
+		a3_time = localStorage.getItem("drawing_3_time");
+		
+		
+		var str_1;
+		var str_2;
+		var str_3;
+		
+		
+		penlift_loc_1 = localStorage.getItem("penlift_loc_1");
+		penlift_1_no = localStorage.getItem("penlift_1_no");
+		x_1 = localStorage.getItem("x_1");
+		y_1 = localStorage.getItem("y_1");
+	
+		penlift_loc_2 = localStorage.getItem("penlift_loc_2");
+		penlift_2_no = localStorage.getItem("penlift_2_no");
+		x_2 = localStorage.getItem("x_2");
+		y_2 = localStorage.getItem("y_2");
+		
+		penlift_loc_3 = localStorage.getItem("penlift_loc_3");
+		penlift_3_no = localStorage.getItem("penlift_3_no");
+		x_3 = localStorage.getItem("x_3");
+		
+		y_3 = localStorage.getItem("y_3");
+		
+		var new_x_1 = x_1.split(",");
+		var new_x_2 = x_2.split(",");
+		var new_x_3 = x_3.split(",");
+		var new_y_1 = y_1.split(",");
+		var new_y_2 = y_2.split(",");
+		var new_y_3 = y_3.split(",");
+		
+
+		
+		
+		
+		
+		
+		
+
+		if(seq1 != null){
+			var table = document.getElementById("table1");
+			var row = table.insertRow(0);
+			
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			cell1.id = "gg";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence";
+			cell2.innerHTML = seq1;
+		}else{
+			var table = document.getElementById("table1");
+			var row = table.insertRow(0);
+			var cell1 = row.insertCell(0);
+			cell1.id = "gg";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg").style.width = "300px";
+			
+			var cell2 = row.insertCell(1);
+			cell1.innerHTML = "Sequence";
+			cell2.innerHTML = "None";
+		}
+		
+		if(seq2 != null){
+			var table = document.getElementById("table2");
+			var row = table.insertRow(0);
+			
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			cell1.id = "gg2";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg2").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence";
+			cell2.innerHTML = seq2;
+		}else{
+			var table = document.getElementById("table2");
+			var row = table.insertRow(0);
+			var cell1 = row.insertCell(0);
+			cell1.id = "gg2";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg2").style.width = "300px";
+			
+			var cell2 = row.insertCell(1);
+			cell1.innerHTML = "Sequence";
+			cell2.innerHTML = "None";
+		}
+		
+		if(seq3 != null){
+			var table = document.getElementById("table3");
+			var row = table.insertRow(0);
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence";
+			cell2.innerHTML = seq3;
+		}else{
+			var table = document.getElementById("table3");
+			var row = table.insertRow(0);
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence";
+			cell2.innerHTML = "None";
+		}
+		
+		if(param_1 != null){
+			var tables = document.getElementById("table1");
+			var rows = tables.insertRow(1);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence (Miss Dots Included)";
+			cell2.innerHTML = param_1;
+			
+		}else{
+			var tables = document.getElementById("table1");
+			var rows = tables.insertRow(1);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence (Miss Dots Included)";
+			cell2.innerHTML = "None";
+			
+		}
+		
+		if(param_2 != null){
+			var tables = document.getElementById("table2");
+			var rows = tables.insertRow(1);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence (Miss Dots Included)";
+			cell2.innerHTML = param_2;
+			
+		}else{
+			var tables = document.getElementById("table2");
+			var rows = tables.insertRow(1);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence (Miss Dots Included)";
+			cell2.innerHTML = "None";
+			
+		}
+		
+		if(param_3 != null){
+			var tables = document.getElementById("table3");
+			var rows = tables.insertRow(1);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence (Miss Dots Included)";
+			cell2.innerHTML = param_3;
+			
+		}else{
+			var tables = document.getElementById("table3");
+			var rows = tables.insertRow(1);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence (Miss Dots Included)";
+			cell2.innerHTML = "None";
+			
+		}
+		
+		if(str_1 != null){
+			var tables = document.getElementById("table1");
+			var rows = tables.insertRow(2);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence (Miss Dots Included)";
+			cell2.innerHTML = str_1;
+			
+		}else{
+			var tables = document.getElementById("table1");
+			var rows = tables.insertRow(2);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Strategy";
+			cell2.innerHTML = "None";
+			
+		}
+		
+		if(str_2 != null){
+			var tables = document.getElementById("table2");
+			var rows = tables.insertRow(2);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence (Miss Dots Included)";
+			cell2.innerHTML = str_2;
+			
+		}else{
+			var tables = document.getElementById("table2");
+			var rows = tables.insertRow(2);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Strategy";
+			cell2.innerHTML = "None";
+			
+		}
+		
+		
+		if(str_3 != null){
+			var tables = document.getElementById("table3");
+			var rows = tables.insertRow(2);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Sequence (Miss Dots Included)";
+			cell2.innerHTML = str_3;
+			
+		}else{
+			var tables = document.getElementById("table3");
+			var rows = tables.insertRow(2);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Strategy";
+			cell2.innerHTML = "None";
+			
+		}
+		
+		if(a1_time != null){
+			var tables = document.getElementById("table1");
+			var rows = tables.insertRow(3);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Time taken to complete (Ms)";
+			cell2.innerHTML = a1_time;
+			
+		}else{
+			var tables = document.getElementById("table1");
+			var rows = tables.insertRow(3);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Time taken to complete (Ms)";
+			cell2.innerHTML = "None";
+			
+		}
+		
+		if(a2_time != null){
+			var tables = document.getElementById("table2");
+			var rows = tables.insertRow(3);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Time taken to complete (Ms)";
+			cell2.innerHTML = a2_time;
+			
+		}else{
+			var tables = document.getElementById("table2");
+			var rows = tables.insertRow(3);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Time taken to complete (Ms)";
+			cell2.innerHTML = "None";
+			
+		}
+		
+		
+		if(a3_time != null){
+			var tables = document.getElementById("table3");
+			var rows = tables.insertRow(3);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Time taken to complete (Ms)";
+			cell2.innerHTML = a3_time;
+			
+		}else{
+			var tables = document.getElementById("table3");
+			var rows = tables.insertRow(3);
+			var cell1 = rows.insertCell(0);
+			var cell2 = rows.insertCell(1);
+			cell1.id = "gg3";
+			cell1.className = "deep-purple darken-2";
+			document.getElementById("gg3").style.width = "300px";
+			
+			cell1.innerHTML = "Time taken to complete (Ms)";
+			cell2.innerHTML = "None";
+			
+		}
+		
+		
+	
+		
+		if(penlift_1_no != null){
+		
+			var table = document.getElementById("penlift1");
+			for(i = 1; i <= penlift_1_no; i++){
+			
+				var row = table.insertRow(i);
+			
+				var cell1 = row.insertCell(0);
+				var cell2 = row.insertCell(1);
+				var cell3 = row.insertCell(2);
+				
+				cell1.innerHTML = i;
+				cell2.innerHTML = new_x_1[0];
+				cell3.innerHTML = new_y_1[i-1];
+			}
+		}
+		else{
+			var table = document.getElementById("penlift1");
+			var row = table.insertRow(1);
+			
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+			cell1.innerHTML = "None";
+			cell2.innerHTML = "None";
+			cell3.innerHTML = "None";
+		}
+		
+		if(penlift_2_no != null){
+		
+			var table = document.getElementById("penlift2");
+			for(i = 1; i <= penlift_2_no; i++){
+			
+				var row = table.insertRow(i);
+			
+				var cell1 = row.insertCell(0);
+				var cell2 = row.insertCell(1);
+				var cell3 = row.insertCell(2);
+				
+				cell1.innerHTML = i;
+				cell2.innerHTML = new_x_2[i-1];
+				cell3.innerHTML = new_y_2[i-1];
+			}
+		}
+		else{
+			var table = document.getElementById("penlift2");
+			var row = table.insertRow(1);
+			
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+			cell1.innerHTML = "None";
+			cell2.innerHTML = "None";
+			cell3.innerHTML = "None";
+		}
+		
+		if(penlift_3_no != null){
+		
+			var table = document.getElementById("penlift3");
+			for(i = 1; i <= penlift_3_no; i++){
+			
+				var row = table.insertRow(i);
+			
+				var cell1 = row.insertCell(0);
+				var cell2 = row.insertCell(1);
+				var cell3 = row.insertCell(2);
+				
+				cell1.innerHTML = i;
+				cell2.innerHTML = new_x_3[i-1];
+				cell3.innerHTML = new_y_3[i-1];
+			}
+		}
+		else{
+			var table = document.getElementById("penlift3");
+			var row = table.insertRow(1);
+			
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+			cell1.innerHTML = "None";
+			cell2.innerHTML = "None";
+			cell3.innerHTML = "None";
+		}
+        </script>
+
+  </body>
+</html>
