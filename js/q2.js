@@ -85,6 +85,8 @@ function sketchpad_touchStart() {
 					//dot_kena_sentuh
 						dot_seq_1.push(i);
 						current_dots = i;
+						resetTimer();
+						startTimer();
 				}
 				
 			}
@@ -156,6 +158,9 @@ function sketchpad_touchStart() {
 					//dot_kena_sentuh
 						dot_seq_2.push(i);
 						current_dots = i;
+						resetTimer();
+						startTimer();
+						
 				}
 			}
 			
@@ -184,6 +189,7 @@ function sketchpad_touchStart() {
 					if(current_dots != i){
 						dot_seq_2.push(i);
 						current_dots = i;
+						startTimer();
 					}
 				}
 			}
@@ -225,6 +231,8 @@ function sketchpad_touchStart() {
 					//dot_kena_sentuh
 						dot_seq_3.push(i);
 						current_dots = i;
+						resetTimer();
+						startTimer();
 				}
 			}
 			
@@ -253,6 +261,7 @@ function sketchpad_touchStart() {
 					if(current_dots != i){
 						dot_seq_3.push(i);
 						current_dots = i;
+						
 					}
 				}
 			}
@@ -292,6 +301,7 @@ function sketchpad_touchEnd() {
 			console.log(y_1);
 			console.log("penlift for drawing 1: " + penlift_1_no);
 			console.log("end X: " + touchX + ", end Y: " + touchY );
+			
 			
 		}
 		
