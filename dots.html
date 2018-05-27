@@ -13,14 +13,23 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet' type='text/css'>
+	<style>
+	#overlay {
+	background: linear-gradient(to bottom,  #3F51B5 0%, #5C6BC0 30%, #FFC107 100%);
+	}
+	#overlay2 {
+	background: linear-gradient(to bottom,  #3F51B5 0%, #5C6BC0 30%, #FFC107 100%);
+	}
 	
+	</style>
 	
 </head>
             
 
 <body onload="on();" style="">
-
-				<div id="overlay" class="blue lighten-3" style="display:block; " onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false" class=".yx1" >
+<p class="c" id="timer" style="display:none;">0s</p>
+<p class="c" id="counter" style="top: 400px;display:none;">0</p>
+				<div id="overlay"  style="display:block; " onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false" class=".yx1" >
 				
 	
 <div class="container">
@@ -38,14 +47,14 @@
 	-->
   </div>
   
-  <h1><button class="waves-effect waves-light btn-large" onclick="off(); toggleFullScreen();" id="continue"><i class="material-icons right">cloud</i>Continue</button></h1>
+  <h1><button class="waves-effect waves-light btn-large deep-purple" onclick="off(); toggleFullScreen();" id="continue"><i class="material-icons right">cloud</i>Continue</button></h1>
   
 </div>		
 			
 	</div>
 	
 	<div id="overlay2" class="green lighten-3" onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false" class="yx1" style="display: block; overflow: auto;width:100% !important">
-		<a class="waves-effect waves-light btn-large" onclick="off2();" id="continue"><i class="material-icons right">cloud</i>button</a>
+		<h1><button class="waves-effect waves-light btn-large deep-purple" onclick="off2();" id="continue"><i class="material-icons right">cloud</i>Continue</button></h1>
 			
 	</div>
 	
@@ -58,7 +67,7 @@
    <div id="testing" class="testing">
 	<a class ="button buttonSet" onclick="startDraw = true; " style="margin-top:20px !important;display: none;" id="btnStart" width="20">Start</a>
 	<button class="btn-large disabled" style="margin-top:20px !important; display:block" id="fake"><i class="material-icons right">no_encryption</i>Next</button>
-	<a class="waves-effect waves-light btn-large" onclick="startDraw = false; init('next');" id="btndownload" style="margin-top:20px !important;" ><i class="material-icons right">navigate_next</i>Next</a>
+	<a class="waves-effect waves-light btn-large deep-purple" onclick="startDraw = false; init('next');" id="btndownload" style="margin-top:20px !important;" ><i class="material-icons right">navigate_next</i>Next</a>
 	</div>
 
 <script type="text/javascript">
@@ -131,6 +140,29 @@
         var strategyList = [];
         var localStorageObject;
 
+		
+		
+
+function startTimer() {
+	
+    interval = setInterval(function() {
+        seconds++
+	console.log("second: " + seconds );	
+
+        document.getElementById("timer").innerHTML = seconds + "s ";
+    }, 1);
+}
+
+function stopTimer() {
+	console.log("interval is: " + interval);
+    clearInterval(interval);
+	
+}
+
+function resetTimer() {
+    seconds = 0;
+    document.getElementById("timer").innerHTML = seconds + "ms ";
+}
 
 </script>	
 <script type="text/javascript" src="js/localStorageObject.js"></script>
