@@ -1,6 +1,6 @@
 colour = {"black": "#000", "red": "#ff0000", "yellow": "#ffff00", "blue":"#00406d"};
 lvlName = ["Stack A", "Stack B", "Stack C"];
-bgImg = ["image/stackA.jpg", "image/stackB.jpg", "image/stackC.jpg", "image/stackD.png", "image/stackE.png", "image/stackF.png", "image/stackG.png", "image/stackH.png"];
+bgImg = ["image/stackA.jpg", "image/stackB.jpg", "image/stackC.jpg", "image/stackD.PNG", "image/stackE.PNG", "image/stackF.PNG", "image/stackG.PNG", "image/stackH.PNG"];
 allDots = [
     [   
        
