@@ -15,10 +15,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet' type='text/css'>
 	<style>
 	#overlay {
-	background: linear-gradient(to bottom,  #3F51B5 0%, #5C6BC0 30%, #FFC107 100%);
+		background: linear-gradient(to bottom,  #3F51B5 0%, #5C6BC0 30%, #FFC107 100%);
 	}
 	#overlay2 {
-	background: linear-gradient(to bottom,  #3F51B5 0%, #5C6BC0 30%, #FFC107 100%);
+		background: linear-gradient(to bottom,  #3F51B5 0%, #5C6BC0 30%, #FFC107 100%);
 	}
 	
 	</style>
@@ -54,13 +54,17 @@
 	</div>
 	
 	<div id="overlay2" class="green lighten-3" onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false" class="yx1" style="display: block; overflow: auto;width:100% !important">
-		<h1><button class="waves-effect waves-light btn-large deep-purple" onclick="off2();" id="continue"><i class="material-icons right">cloud</i>Continue</button></h1>
-			
+	<div style="padding: 50px;">
+	<center><h3>The game is simple. Just connect all the dots to forms the shapes.</h3></center>
+	<center><h3>Aftrer you have done, press the <a class="waves-effect waves-light btn-large deep-purple"><i class="material-icons right">navigate_next</i>Next</a> button to continue to the next shapes</h3></center>
+	<center><h3>Click the button below to continue</h3></center>
+		<h1><button class="waves-effect waves-light btn-large deep-purple" onclick="off2();" id="continue" style="top:-200px;"><i class="material-icons right">cloud</i>Continue</button></h1>
+	</div>		
 	</div>
 	
 	
  <div id="sketchpadapp" style="left:-50px; background-color:blue;">  
-            <img class='img' id="imageid"/>
+            <img class='img' id="imageid" />
             <canvas id="sketchpad"></canvas>
                
     </div>
@@ -69,46 +73,8 @@
 	<button class="btn-large disabled" style="margin-top:20px !important; display:block" id="fake"><i class="material-icons right">no_encryption</i>Next</button>
 	<a class="waves-effect waves-light btn-large deep-purple" onclick="startDraw = false; init('next');" id="btndownload" style="margin-top:20px !important;" ><i class="material-icons right">navigate_next</i>Next</a>
 	</div>
-
+<script src="js/variable.js"></script>
 <script type="text/javascript">
-	var check;
-	var check_drawing_type;
-	var start_check_1;
-	var start_check_2;
-	var start_check_3;
-	var startX, startY;
-	var endX, endY;
-	var moveX, moveY;
-	var dot_seq_1 = [];
-	var dot_seq_2 = [];
-	var dot_seq_3 = [];
-	var dot_param_1 = [];
-	var dot_param_2 = [];
-	var dot_param_3 = [];
-	var save_x,save_y;
-	var current_dots;
-	var current_param;
-	
-	var drawing_1_time;
-	var drawing_2_time;
-	var drawing_3_time;
-	
-	var penlift_loc_1;
-	var penlift_1_no = 0;
-	var x_1 = [];
-	var y_1 = [];
-	
-	var penlift_loc_2;
-	var penlift_2_no = 0;
-	var x_2 = [];
-	var y_2 = [];
-	
-	var penlift_loc_3;
-	var penlift_3_no = 0;
-	var x_3 = [];
-	var y_3 = [];
-	
-	
 	var dotArray = {},
             colour, randIndex = -1,
             circle = {},
@@ -166,7 +132,6 @@ function resetTimer() {
 
 </script>	
 <script type="text/javascript" src="js/localStorageObject.js"></script>
-<script type="text/javascript" src="js/strategy.js"></script>
 <script type="text/javascript" src="js/dotsArray.js"></script>
 <script type="text/javascript" src="js/q1.js"></script>		
 <script type="text/javascript" src="js/q2.js"></script>		
