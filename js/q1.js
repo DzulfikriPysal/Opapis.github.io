@@ -49,6 +49,26 @@ function reinit(start){
 		stopTimer();
 		drawing_3_time = document.getElementById("timer").innerHTML;
 	}
+	else if(check_drawing_type == 3 && start_check_4 == true){
+		stopTimer();
+		drawing_4_time = document.getElementById("timer").innerHTML;
+	}
+	else if(check_drawing_type == 4 && start_check_5== true){
+		stopTimer();
+		drawing_5_time = document.getElementById("timer").innerHTML;
+	}
+	else if(check_drawing_type == 5 && start_check_6== true){
+		stopTimer();
+		drawing_6_time = document.getElementById("timer").innerHTML;
+	}
+	else if(check_drawing_type == 6 && start_check_7 == true){
+		stopTimer();
+		drawing_7_time = document.getElementById("timer").innerHTML;
+	}
+	else if(check_drawing_type == 7 && start_check_8 == true){
+		stopTimer();
+		drawing_8_time = document.getElementById("timer").innerHTML;
+	}
     
     //resetPenlift();
     mouseClick = 0;
@@ -81,6 +101,36 @@ function nextDrawing(canvas) {
 				con = 1;
 				
 			}
+			else if(randIndex == 3){
+				start_check_4 = false;
+				document.getElementById('btndownload').style.visibility = 'hidden';
+				con = 1;
+				
+			}
+			else if(randIndex == 4){
+				start_check_5 = false;
+				document.getElementById('btndownload').style.visibility = 'hidden';
+				con = 1;
+				
+			}
+			else if(randIndex == 5){
+				start_check_6 = false;
+				document.getElementById('btndownload').style.visibility = 'hidden';
+				con = 1;
+				
+			}
+			else if(randIndex == 6){
+				start_check_7 = false;
+				document.getElementById('btndownload').style.visibility = 'hidden';
+				con = 1;
+				
+			}
+			else if(randIndex == 7){
+				start_check_8= false;
+				document.getElementById('btndownload').style.visibility = 'hidden';
+				con = 1;
+				
+			}
 			dotArray = allDots[randIndex];
 			level = lvlName[randIndex];
 			document.getElementById("imageid").src = bgImg[randIndex];
@@ -102,7 +152,7 @@ function nextDrawing(canvas) {
 }
 
 function randomNumber(prev, recursive){
-        var max = 3;
+        var max = 8;
         var rand = Math.floor((Math.random() * max));
 		
 		if(randArr.length >= max){
