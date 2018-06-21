@@ -278,6 +278,359 @@ function sketchpad_touchStart() {
 		
 	}
 	
+	
+	//========================================================================================================================================================================
+	else if(check_drawing_type == 3){
+		//console.log(check_drawing_type);
+		//console.log(dotArray.length);
+		
+		
+		if(start_check_4 != true){
+			startX = touchX;
+			startY = touchY;
+			save_x = touchX;
+			save_y = touchY;
+			
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (coordinate_position(startX, startY, dotArray[i].x, dotArray[i].y)) {
+					start_check_4 = true;
+					mouseDown = 1;
+					console.log("we are here brohh");
+					document.getElementById('btnStart').click()
+					document.getElementById('btndownload').style.visibility = 'visible';
+					document.getElementById('fake').style.display = 'none';
+					drawLine(ctx,touchX,touchY,6);
+					//dot_kena_sentuh
+						dot_seq_4.push(i);
+						current_dots = i;
+						resetTimer();
+						startTimer();
+				}
+			}
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (through_parameter(touchX, touchY, dotArray[i].x, dotArray[i].y)) {
+						dot_param_4.push(i);
+						current_param = i;
+				}
+			}
+				
+		}
+		else{
+			
+			startX = touchX;
+			startY = touchY;
+			save_x = touchX;
+			save_y = touchY;
+			mouseDown = 1;
+			drawLine(ctx,touchX,touchY,6);
+			for (var i = 0; i < dotArray.length; i++) {
+				if (coordinate_position(startX, startY, dotArray[i].x, dotArray[i].y)) {
+					mouseDown = 1;
+					
+					
+					//dot_kena_sentuh
+					if(current_dots != i){
+						dot_seq_4.push(i);
+						current_dots = i;
+						
+					}
+				}
+			}
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (through_parameter(touchX, touchY, dotArray[i].x, dotArray[i].y)) {
+						if(current_param != i){
+							dot_param_4.push(i);
+							current_param = i;
+						}
+				}
+			}
+		}
+		
+	}
+	else if(check_drawing_type == 4){
+		//console.log(check_drawing_type);
+		//console.log(dotArray.length);
+		
+		
+		if(start_check_5 != true){
+			startX = touchX;
+			startY = touchY;
+			save_x = touchX;
+			save_y = touchY;
+			
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (coordinate_position(startX, startY, dotArray[i].x, dotArray[i].y)) {
+					start_check_5 = true;
+					mouseDown = 1;
+					console.log("we are here brohh");
+					document.getElementById('btnStart').click()
+					document.getElementById('btndownload').style.visibility = 'visible';
+					document.getElementById('fake').style.display = 'none';
+					drawLine(ctx,touchX,touchY,6);
+					//dot_kena_sentuh
+						dot_seq_5.push(i);
+						current_dots = i;
+						resetTimer();
+						startTimer();
+				}
+			}
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (through_parameter(touchX, touchY, dotArray[i].x, dotArray[i].y)) {
+						dot_param_5.push(i);
+						current_param = i;
+				}
+			}
+				
+		}
+		else{
+			
+			startX = touchX;
+			startY = touchY;
+			save_x = touchX;
+			save_y = touchY;
+			mouseDown = 1;
+			drawLine(ctx,touchX,touchY,6);
+			for (var i = 0; i < dotArray.length; i++) {
+				if (coordinate_position(startX, startY, dotArray[i].x, dotArray[i].y)) {
+					mouseDown = 1;
+					
+					
+					//dot_kena_sentuh
+					if(current_dots != i){
+						dot_seq_5.push(i);
+						current_dots = i;
+						
+					}
+				}
+			}
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (through_parameter(touchX, touchY, dotArray[i].x, dotArray[i].y)) {
+						if(current_param != i){
+							dot_param_5.push(i);
+							current_param = i;
+						}
+				}
+			}
+		}
+		
+	}
+	else if(check_drawing_type == 5){
+		//console.log(check_drawing_type);
+		//console.log(dotArray.length);
+		
+		
+		if(start_check_6 != true){
+			startX = touchX;
+			startY = touchY;
+			save_x = touchX;
+			save_y = touchY;
+			
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (coordinate_position(startX, startY, dotArray[i].x, dotArray[i].y)) {
+					start_check_6 = true;
+					mouseDown = 1;
+					console.log("we are here brohh");
+					document.getElementById('btnStart').click()
+					document.getElementById('btndownload').style.visibility = 'visible';
+					document.getElementById('fake').style.display = 'none';
+					drawLine(ctx,touchX,touchY,6);
+					//dot_kena_sentuh
+						dot_seq_6.push(i);
+						current_dots = i;
+						resetTimer();
+						startTimer();
+				}
+			}
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (through_parameter(touchX, touchY, dotArray[i].x, dotArray[i].y)) {
+						dot_param_6.push(i);
+						current_param = i;
+				}
+			}
+				
+		}
+		else{
+			
+			startX = touchX;
+			startY = touchY;
+			save_x = touchX;
+			save_y = touchY;
+			mouseDown = 1;
+			drawLine(ctx,touchX,touchY,6);
+			for (var i = 0; i < dotArray.length; i++) {
+				if (coordinate_position(startX, startY, dotArray[i].x, dotArray[i].y)) {
+					mouseDown = 1;
+					
+					
+					//dot_kena_sentuh
+					if(current_dots != i){
+						dot_seq_6.push(i);
+						current_dots = i;
+						
+					}
+				}
+			}
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (through_parameter(touchX, touchY, dotArray[i].x, dotArray[i].y)) {
+						if(current_param != i){
+							dot_param_6.push(i);
+							current_param = i;
+						}
+				}
+			}
+		}
+		
+	}
+	else if(check_drawing_type == 6){
+		//console.log(check_drawing_type);
+		//console.log(dotArray.length);
+		
+		
+		if(start_check_7 != true){
+			startX = touchX;
+			startY = touchY;
+			save_x = touchX;
+			save_y = touchY;
+			
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (coordinate_position(startX, startY, dotArray[i].x, dotArray[i].y)) {
+					start_check_7 = true;
+					mouseDown = 1;
+					console.log("we are here brohh");
+					document.getElementById('btnStart').click()
+					document.getElementById('btndownload').style.visibility = 'visible';
+					document.getElementById('fake').style.display = 'none';
+					drawLine(ctx,touchX,touchY,6);
+					//dot_kena_sentuh
+						dot_seq_7.push(i);
+						current_dots = i;
+						resetTimer();
+						startTimer();
+				}
+			}
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (through_parameter(touchX, touchY, dotArray[i].x, dotArray[i].y)) {
+						dot_param_7.push(i);
+						current_param = i;
+				}
+			}
+				
+		}
+		else{
+			
+			startX = touchX;
+			startY = touchY;
+			save_x = touchX;
+			save_y = touchY;
+			mouseDown = 1;
+			drawLine(ctx,touchX,touchY,6);
+			for (var i = 0; i < dotArray.length; i++) {
+				if (coordinate_position(startX, startY, dotArray[i].x, dotArray[i].y)) {
+					mouseDown = 1;
+					
+					
+					//dot_kena_sentuh
+					if(current_dots != i){
+						dot_seq_7.push(i);
+						current_dots = i;
+						
+					}
+				}
+			}
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (through_parameter(touchX, touchY, dotArray[i].x, dotArray[i].y)) {
+						if(current_param != i){
+							dot_param_7.push(i);
+							current_param = i;
+						}
+				}
+			}
+		}
+		
+	}
+	else if(check_drawing_type == 7){
+		//console.log(check_drawing_type);
+		//console.log(dotArray.length);
+		
+		
+		if(start_check_8 != true){
+			startX = touchX;
+			startY = touchY;
+			save_x = touchX;
+			save_y = touchY;
+			
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (coordinate_position(startX, startY, dotArray[i].x, dotArray[i].y)) {
+					start_check_8 = true;
+					mouseDown = 1;
+					console.log("we are here brohh");
+					document.getElementById('btnStart').click()
+					document.getElementById('btndownload').style.visibility = 'visible';
+					document.getElementById('fake').style.display = 'none';
+					drawLine(ctx,touchX,touchY,6);
+					//dot_kena_sentuh
+						dot_seq_8.push(i);
+						current_dots = i;
+						resetTimer();
+						startTimer();
+				}
+			}
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (through_parameter(touchX, touchY, dotArray[i].x, dotArray[i].y)) {
+						dot_param_8.push(i);
+						current_param = i;
+				}
+			}
+				
+		}
+		else{
+			
+			startX = touchX;
+			startY = touchY;
+			save_x = touchX;
+			save_y = touchY;
+			mouseDown = 1;
+			drawLine(ctx,touchX,touchY,6);
+			for (var i = 0; i < dotArray.length; i++) {
+				if (coordinate_position(startX, startY, dotArray[i].x, dotArray[i].y)) {
+					mouseDown = 1;
+					
+					
+					//dot_kena_sentuh
+					if(current_dots != i){
+						dot_seq_8.push(i);
+						current_dots = i;
+						
+					}
+				}
+			}
+			
+			for (var i = 0; i < dotArray.length; i++) {
+				if (through_parameter(touchX, touchY, dotArray[i].x, dotArray[i].y)) {
+						if(current_param != i){
+							dot_param_8.push(i);
+							current_param = i;
+						}
+				}
+			}
+		}
+		
+	}
+	//=======================================================================================================================
 
 }
 
@@ -333,6 +686,71 @@ function sketchpad_touchEnd() {
 			console.log("end X: " + touchX + ", end Y: " + touchY );
 		}
 	}
+	else if(check_drawing_type == 3){
+		console.log(dot_seq_4);
+		console.log(dot_param_4);
+		if(start_check_4 == true){
+			penlift_4_no = penlift_4_no + 1;
+			x_4.push(touchX);
+			y_4.push(touchY);
+			console.log(x_4);
+			console.log(y_4);
+			console.log("penlift for drawing 1: " + penlift_4_no);
+			console.log("end X: " + touchX + ", end Y: " + touchY );
+		}
+	}
+	else if(check_drawing_type == 4){
+		console.log(dot_seq_5);
+		console.log(dot_param_5);
+		if(start_check_5 == true){
+			penlift_5_no = penlift_5_no + 1;
+			x_5.push(touchX);
+			y_5.push(touchY);
+			console.log(x_5);
+			console.log(y_5);
+			console.log("penlift for drawing 1: " + penlift_5_no);
+			console.log("end X: " + touchX + ", end Y: " + touchY );
+		}
+	}
+	else if(check_drawing_type == 5){
+		console.log(dot_seq_6);
+		console.log(dot_param_6);
+		if(start_check_6 == true){
+			penlift_6_no = penlift_6_no + 1;
+			x_6.push(touchX);
+			y_6.push(touchY);
+			console.log(x_3);
+			console.log(y_3);
+			console.log("penlift for drawing 1: " + penlift_6_no);
+			console.log("end X: " + touchX + ", end Y: " + touchY );
+		}
+	}
+	else if(check_drawing_type == 6){
+		console.log(dot_seq_7);
+		console.log(dot_param_7);
+		if(start_check_7 == true){
+			penlift_7_no = penlift_7_no + 1;
+			x_7.push(touchX);
+			y_7.push(touchY);
+			console.log(x_7);
+			console.log(y_7);
+			console.log("penlift for drawing 1: " + penlift_7_no);
+			console.log("end X: " + touchX + ", end Y: " + touchY );
+		}
+	}
+	else if(check_drawing_type == 7){
+		console.log(dot_seq_8);
+		console.log(dot_param_8);
+		if(start_check_8 == true){
+			penlift_8_no = penlift_8_no + 1;
+			x_8.push(touchX);
+			y_8.push(touchY);
+			console.log(x_8);
+			console.log(y_8);
+			console.log("penlift for drawing 1: " + penlift_8_no);
+			console.log("end X: " + touchX + ", end Y: " + touchY );
+		}
+	}
     //incPenlift();
 }
 
@@ -365,6 +783,21 @@ function sketchpad_touchMove(e) {
 				else if(check_drawing_type == 2  && start_check_3 == true){
 					dot_seq_3.push(i);
 				}
+				else if(check_drawing_type == 3  && start_check_4 == true){
+					dot_seq_4.push(i);
+				}
+				else if(check_drawing_type == 4  && start_check_5== true){
+					dot_seq_5.push(i);
+				}
+				else if(check_drawing_type == 5  && start_check_6 == true){
+					dot_seq_6.push(i);
+				}
+				else if(check_drawing_type == 6 && start_check_7== true){
+					dot_seq_7.push(i);
+				}
+				else if(check_drawing_type == 7  && start_check_8 == true){
+					dot_seq_8.push(i);
+				}
 				current_dots = i;
 			}
 		}
@@ -384,6 +817,21 @@ function sketchpad_touchMove(e) {
 				}
 				else if(check_drawing_type == 2 && start_check_3 == true){
 					dot_param_3.push(i);
+				}
+				else if(check_drawing_type == 3 && start_check_4 == true){
+					dot_param_4.push(i);
+				}
+				else if(check_drawing_type == 4 && start_check_5 == true){
+					dot_param_5.push(i);
+				}
+				else if(check_drawing_type == 5 && start_check_6 == true){
+					dot_param_6.push(i);
+				}
+				else if(check_drawing_type == 6 && start_check_7 == true){
+					dot_param_7.push(i);
+				}
+				else if(check_drawing_type == 7 && start_check_8 == true){
+					dot_param_8.push(i);
 				}
 				current_param = i;
 			}
