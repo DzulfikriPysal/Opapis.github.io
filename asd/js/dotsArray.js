@@ -456,50 +456,50 @@ allDots = [
             colour: colour.black,
             //dotnum: 15
         }
-		
-		
-		
+			
 		
 	],
-		[   
-		//StackF
+	
+	[   
+		
+       //StackF
         {
-            x: 133,
-            y: 45,
+            x: 182,
+            y: 65,
             colour: colour.black,
             //dotnum: 1
         },
 		
 		 {
-            x: 238,
-            y: 45,
+            x: 265,
+            y: 65,
             colour: colour.black,
             //dotnum: 2
         },
 		
 		{
-            x: 238,
+            x: 265,
             y: 170,
             colour: colour.black,
             //dotnum: 3
         },
 		
 		{
-            x: 238,
-            y: 575,
+            x: 265,
+            y: 530,
             colour: colour.black,
             //dotnum: 4
         },
 		
 		{
-            x: 133,
-            y: 575,
+            x: 182,
+            y: 530,
             colour: colour.black,
             //dotnum: 5
         },
 		
 		{
-            x: 343,
+            x: 346,
             y: 170,
             colour: colour.black,
             //dotnum: 6
@@ -507,76 +507,75 @@ allDots = [
 		
 		
 		{
-            x: 343,
-            y: 275,
+            x: 346,
+            y: 270,
             colour: colour.black,
             //dotnum: 7
         },
 		
 		{
-            x: 343,
-            y: 575,
+            x: 346,
+            y: 530,
             colour: colour.black,
             //dotnum: 8
         },
 		
 		{
-            x: 448,
-            y: 275,
+            x: 426,
+            y: 270,
             colour: colour.black,
             //dotnum: 9
         },
 		
 		{
-            x: 448,
-            y: 360,
+            x: 426,
+            y: 344,
             colour: colour.black,
             //dotnum: 10
         },
 		
 		{
-            x: 448,
-            y: 575,
+            x: 426,
+            y: 530,
             colour: colour.black,
             //dotnum: 11
         },
 		
 		{
-            x: 553,
-            y: 360,
+            x: 507,
+            y: 344,
             colour: colour.black,
             //dotnum: 12
         },
 		
 		
 		{
-            x: 553,
-            y: 475,
+            x: 507,
+            y: 445,
             colour: colour.black,
             //dotnum: 13
         },
 		
 		{
-            x: 553,
-            y: 575,
+            x: 507,
+            y: 530,
             colour: colour.black,
             //dotnum: 14
         },
 		
 		{
-            x: 657,
-            y: 475,
+            x: 587,
+            y: 445,
             colour: colour.black,
             //dotnum: 15
         },
 		
 		{
-            x: 657,
-            y: 575,
+            x: 587,
+            y: 530,
             colour: colour.black,
             //dotnum: 15
         }
-		
 	],
 	
 	[//StackG
