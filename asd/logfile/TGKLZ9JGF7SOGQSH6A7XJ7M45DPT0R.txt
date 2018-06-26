@@ -1,0 +1,22 @@
+Drawing 1 
+Sequence = 0,1
+Strategy = Undefined strategy
+Parameter = 0,1
+Time taken to finish = 264s 
+Penlift 1, x: 112.4000244140625, y 1: 264.3999938964844
+
+
+Drawing 2 
+Sequence = 0,1
+Strategy = Undefined strategy
+Parameter = 0,1
+Time taken to finish = 258s 
+Penlift 1, x: 320.4000244140625, y 1: 248.40000915527344
+
+
+Drawing 3 
+Sequence = 0,12
+Strategy = Partial Framming
+Parameter = 0,12
+Time taken to finish = 239s 
+Penlift 1, x: 330, y 1: 118.80000305175781

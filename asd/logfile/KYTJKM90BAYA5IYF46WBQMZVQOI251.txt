@@ -1,0 +1,22 @@
+Drawing 1 
+Sequence = 0,1
+Strategy = Undefined strategy
+Parameter = 0,1
+Time taken to finish = 289s 
+Penlift 1, x: 104.4000244140625, y 1: 307.6000061035156
+
+
+Drawing 2 
+Sequence = 0,1
+Strategy = Undefined strategy
+Parameter = 0,1
+Time taken to finish = 221s 
+Penlift 1, x: 322, y 1: 232.40000915527344
+
+
+Drawing 3 
+Sequence = 0,1
+Strategy = Undefined strategy
+Parameter = 0,1
+Time taken to finish = 388s 
+Penlift 1, x: 107.60003662109375, y 1: 517.2000122070312
