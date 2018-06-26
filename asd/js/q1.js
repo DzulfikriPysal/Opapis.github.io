@@ -5,7 +5,7 @@ function init(start) {
         reinit(start);
 		
         canvas = document.getElementById('sketchpad');
-        canvas.width = screen.width - 250;
+        canvas.width = screen.width - 200;
         canvas.height = window.document.documentElement.clientHeight - 10;
 
         if (canvas.getContext)
