@@ -647,49 +647,49 @@ allDots = [
 	
 	[ //stackH
 	
-	//StackH
+	
         {
-            x: 108,
-            y: 285,
+            x: 109,
+            y: 325,
             colour: colour.black,
             //dotnum: 1
         },
 		
 		{
             x: 235,
-            y: 120,
+            y: 190,
             colour: colour.black,
             //dotnum: 2
         },
 		
 		{
-            x: 409,
-            y: 75,
+            x: 410,
+            y: 155,
             colour: colour.black,
             //dotnum: 3
         },
 		
 		{
-            x: 580,
-            y: 130,
+            x: 583,
+            y: 198,
             colour: colour.black,
             //dotnum: 4
         },
 		
 		{
-            x: 699,
-            y: 285,
+            x: 700,
+            y: 332,
             colour: colour.black,
             //dotnum: 5
         },
 		
 		{
-            x: 406,
-            y: 485,
+            x: 408,
+            y: 467,
             colour: colour.black,
             //dotnum: 6
         }
-	]	
-	
-	
-];
+		
+	]
+		
+	];
