@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1024">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<script src="js/jquery.js"></script> 
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<style>
+
+    
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 2em;
+    color: white;
+    background-color: #D35B5B;
+    font-family:'Gill Sans';
+    /* clear: left; */
+    font-size:18px;
+    text-align: center;
+}
+
+
+.main {
+    padding: 1em;
+    color: #000;
+    background-color: rgba(135, 218, 233, 0.69);
+    font-family:'Gill Sans';
+    clear: left;
+    font-size:20px;
+    text-align: center;
+}
+
+#restart {
+              padding: 10px 20px;
+              font-size: 24px;
+              font-family:monospace; 
+              text-align: center;
+              text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+              cursor: pointer;
+              outline: none;
+              color: #fff;
+              background-color: #4C6FAF;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+            }
+            #restart:hover {background-color: #3E578E}
+            
+            #restart:active {
+              background-color: #8E3E4B;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            
+         #continue {
+              padding: 10px 20px;
+              font-size: 24px;
+              font-family:monospace; 
+              text-align: center;
+              text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+              cursor: pointer;
+              outline: none;
+              color: #fff;
+              background-color: #AF4C6A;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+            }
+            #continue:hover {background-color: #8E3E7A}
+            
+            #continue:active {
+              background-color: #8E3E4B;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Instruction</h1>
+</header>
+  
+
+
+<div class="main">
+  <h1>Welcome To Fun With Shapes!</h1>
+  <p>The game is simple.Just connect all the dots to form the shapes.</p>
+  <p>After you have done please press the <button id="restart">Next</button> button to continue to the next shapes.</p>
+  <p>Click the button below to continue.</p>
+  <a href="dots.html" id="continue" class="btn btn-default">Continue</a>
+</div>
+
+<footer></footer>
+
+</div>
+
+</body>
+</html>
