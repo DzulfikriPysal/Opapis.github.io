@@ -391,78 +391,78 @@ allDots =
 		//shape 10: Nephroid
 
         {
-            x: 678,
+            x: 578,
             y: 120,
             colour: colour.black
             //dotnum: 1
         },
            
         {
-            x: 820,
+            x: 720,
             y: 50,
             colour: colour.black,
             //dotnum: 2
         }, 
         {
-            x: 945,
+            x: 845,
             y: 120,
             colour: colour.black,
             //dotnum: 3
         }, 
 
         {
-            x: 1030,
+            x: 930,
             y: 250,
             colour: colour.black,
             //dotnum: 4
         },
 
         {
-            x: 975,
+            x: 875,
             y: 389,
             colour: colour.black,
             //dotnum: 5
         },
         {
-            x: 820,
+            x: 720,
             y: 450,
             colour: colour.black,
             //dotnum: 6
         },
         {
-            x: 685,
+            x: 585,
             y: 389,
             colour: colour.black,
             //dotnum: 7
         }, 
         {
-            x: 513,
+            x: 413,
             y: 450,
             colour: colour.black,
             //dotnum: 8
         },
         {
-            x: 335,
+            x: 235,
             y: 389,
             colour: colour.black,
             //dotnum: 9
         },
         
         {
-            x: 281,
+            x: 181,
             y: 250,
             colour: colour.black,
             //dotnum: 10
         },
 
         {
-            x: 355,
+            x: 255,
             y: 120,
             colour: colour.black,
             //dotnum: 11
         }, 
         {
-            x: 513,
+            x: 413,
             y: 50,
             colour: colour.black,
             //dotnum: 12
